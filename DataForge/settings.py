@@ -50,9 +50,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'DataForge.middleware.AutoLoginMiddleware'
 ]
 
-ROOT_URLCONF = 'Compile-Mate.urls'
+ROOT_URLCONF = 'DataForge.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Compile-Mate.wsgi.application'
+WSGI_APPLICATION = 'DataForge.wsgi.application'
 
 
 # Database
